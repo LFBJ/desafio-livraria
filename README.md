@@ -87,7 +87,7 @@ src/
  ┣ 📂 Models
  ┣ 📂 DTOs
  ┣ 📂 Migrations
-🧪 Testes
+🧪 Testes (BookLibrary.Tests)
 ```
 
 📌 Observações
