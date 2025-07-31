@@ -16,26 +16,23 @@ RESTful API
 ⚙️ Configuração do Ambiente
 
 1. Clone o repositório
-bash
-Copy
-Edit
-git clone https://github.com/LFBJ/desafio-livraria.git
+```bash
 
+git clone https://github.com/LFBJ/desafio-livraria.git
 cd book-library-api
+```
+
 3. Configure o banco de dados MySQL
 Crie o banco de dados:
 
-sql
-Copy
-Edit
+```bash
 CREATE DATABASE biblioteca CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+```
 
 3. Configure o arquivo appsettings.Development.json
 Crie um arquivo appsettings.Development.json na raiz do projeto com a seguinte configuração:
 
-json
-Copy
-Edit
+```bash
 {
   "ConnectionStrings": {
     "DefaultConnection": "server=localhost;port=3306;database=biblioteca;user=root;password=123456"
@@ -47,27 +44,26 @@ Edit
     }
   }
 }
+```
 
 🔐 Importante: esse arquivo está ignorado no .gitignore por conter dados sensíveis.
 
 4. Restore de pacotes e aplicação das migrations
-bash
-Copy
-Edit
+```bash
 dotnet restore
 dotnet ef database update
+```
 
 🚀 Executando o Projeto
-bash
-Copy
-Edit
+```bash
 dotnet run
+```
+
 Acesse a documentação Swagger:
 
-bash
-Copy
-Edit
+```bash
 https://localhost:5001/swagger
+```
 
 🔧 Endpoints disponíveis (via Swagger)
 
