@@ -1,0 +1,17 @@
+# Build
+bin/
+obj/
+
+# Secrets
+appsettings.*.json
+!appsettings.json
+
+# User-specific files
+*.user
+*.suo
+
+# EF Migrations output
+Migrations/
+
+# VS Code
+.vscode/

@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookLibraryAPI</name>
+    </assembly>
+    <members>
+        <member name="T:AutorController">
+            <summary>
+            Controlador para gerenciar autores.
+            </summary>
+        </member>
+        <member name="M:AutorController.GetAll">
+            <summary>
+            Retorna todos os autores cadastrados.
+            </summary>
+            <returns>Lista de autores.</returns>
+        </member>
+        <member name="M:AutorController.GetById(System.Int32)">
+            <summary>
+            Retorna um autor pelo ID.
+            </summary>
+            <param name="id">ID do autor.</param>
+            <returns>Autor encontrado ou NotFound.</returns>
+        </member>
+        <member name="M:AutorController.Create(BookLibraryAPI.DTOs.AutorDTO)">
+            <summary>
+            Cria um novo autor.
+            </summary>
+            <param name="dto">Dados do autor.</param>
+            <returns>Autor criado.</returns>
+        </member>
+        <member name="M:AutorController.Update(System.Int32,BookLibraryAPI.DTOs.AutorDTO)">
+            <summary>
+            Atualiza um autor existente.
+            </summary>
+            <param name="id">ID do autor.</param>
+            <param name="dto">Novos dados do autor.</param>
+            <returns>NoContent ou erro.</returns>
+        </member>
+        <member name="M:AutorController.Delete(System.Int32)">
+            <summary>
+            Remove um autor pelo ID.
+            </summary>
+            <param name="id">ID do autor.</param>
+            <returns>NoContent ou NotFound.</returns>
+        </member>
+        <member name="T:GeneroController">
+            <summary>
+            Controlador para gerenciar gêneros.
+            </summary>
+        </member>
+        <member name="M:GeneroController.GetAll">
+            <summary>
+            Retorna todos os gêneros cadastrados.
+            </summary>
+            <returns>Lista de gêneros.</returns>
+        </member>
+        <member name="M:GeneroController.GetById(System.Int32)">
+            <summary>
+            Retorna um gênero pelo ID.
+            </summary>
+            <param name="id">ID do gênero.</param>
+            <returns>Gênero encontrado ou NotFound.</returns>
+        </member>
+        <member name="M:GeneroController.Create(BookLibraryAPI.DTOs.GeneroDTO)">
+            <summary>
+            Cria um novo gênero.
+            </summary>
+            <param name="dto">Dados do gênero.</param>
+            <returns>Gênero criado.</returns>
+        </member>
+        <member name="M:GeneroController.Update(System.Int32,BookLibraryAPI.DTOs.GeneroDTO)">
+            <summary>
+            Atualiza um gênero existente.
+            </summary>
+            <param name="id">ID do gênero.</param>
+            <param name="dto">Novos dados do gênero.</param>
+            <returns>NoContent ou erro.</returns>
+        </member>
+        <member name="M:GeneroController.Delete(System.Int32)">
+            <summary>
+            Remove um gênero pelo ID.
+            </summary>
+            <param name="id">ID do gênero.</param>
+            <returns>NoContent ou NotFound.</returns>
+        </member>
+        <member name="T:LivroController">
+            <summary>
+            Controlador para gerenciar livros.
+            </summary>
+        </member>
+        <member name="M:LivroController.GetAll">
+            <summary>
+            Retorna todos os livros cadastrados.
+            </summary>
+            <returns>Lista de livros.</returns>
+        </member>
+        <member name="M:LivroController.GetById(System.Int32)">
+            <summary>
+            Retorna um livro pelo ID.
+            </summary>
+            <param name="id">ID do livro.</param>
+            <returns>Livro encontrado ou NotFound.</returns>
+        </member>
+        <member name="M:LivroController.Create(BookLibraryAPI.DTOs.LivroDTO)">
+            <summary>
+            Cria um novo livro.
+            </summary>
+            <param name="dto">Dados do livro.</param>
+            <returns>Livro criado.</returns>
+        </member>
+        <member name="M:LivroController.Update(System.Int32,BookLibraryAPI.DTOs.LivroDTO)">
+            <summary>
+            Atualiza um livro existente.
+            </summary>
+            <param name="id">ID do livro.</param>
+            <param name="dto">Novos dados do livro.</param>
+            <returns>NoContent ou erro.</returns>
+        </member>
+        <member name="M:LivroController.Delete(System.Int32)">
+            <summary>
+            Remove um livro pelo ID.
+            </summary>
+            <param name="id">ID do livro.</param>
+            <returns>NoContent ou NotFound.</returns>
+        </member>
+        <member name="T:BookLibraryAPI.DTOs.AutorDTO">
+            <summary>
+            DTO para transferência de dados do Autor.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.AutorDTO.Id">
+            <summary>
+            Identificador único do autor.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.AutorDTO.Nome">
+            <summary>
+            Nome do autor.
+            </summary>
+        </member>
+        <member name="T:BookLibraryAPI.DTOs.GeneroDTO">
+            <summary>
+            DTO para transferência de dados do Gênero.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.GeneroDTO.Id">
+            <summary>
+            Identificador único do gênero.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.GeneroDTO.Nome">
+            <summary>
+            Nome do gênero.
+            </summary>
+        </member>
+        <member name="T:BookLibraryAPI.DTOs.LivroDTO">
+            <summary>
+            DTO para transferência de dados do Livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.LivroDTO.Id">
+            <summary>
+            Identificador único do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.LivroDTO.Titulo">
+            <summary>
+            Título do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.LivroDTO.GeneroId">
+            <summary>
+            Identificador do gênero ao qual o livro pertence.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.DTOs.LivroDTO.AutorId">
+            <summary>
+            Identificador do autor do livro.
+            </summary>
+        </member>
+        <member name="T:BookLibraryAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:BookLibraryAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookLibraryAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookLibraryAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookLibraryAPI.Models.Autor">
+            <summary>
+            Representa um autor, que pode possuir vários livros.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Autor.Id">
+            <summary>
+            Identificador único do autor.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Autor.Nome">
+            <summary>
+            Nome do autor.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Autor.Livros">
+            <summary>
+            Lista de livros escritos por este autor.
+            </summary>
+        </member>
+        <member name="T:BookLibraryAPI.Models.Genero">
+            <summary>
+            Representa um gênero literário, que pode ter vários livros.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Genero.Id">
+            <summary>
+            Identificador único do gênero.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Genero.Nome">
+            <summary>
+            Nome do gênero (ex: Ficção, Romance, Terror).
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Genero.Livros">
+            <summary>
+            Lista de livros associados a este gênero.
+            </summary>
+        </member>
+        <member name="T:BookLibraryAPI.Models.Livro">
+            <summary>
+            Representa um livro, que pertence a um autor e a um gênero.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.Id">
+            <summary>
+            Identificador único do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.Titulo">
+            <summary>
+            Título do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.GeneroId">
+            <summary>
+            Chave estrangeira para o gênero do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.Genero">
+            <summary>
+            Referência para o gênero do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.AutorId">
+            <summary>
+            Chave estrangeira para o autor do livro.
+            </summary>
+        </member>
+        <member name="P:BookLibraryAPI.Models.Livro.Autor">
+            <summary>
+            Referência para o autor do livro.
+            </summary>
+        </member>
+    </members>
+</doc>
