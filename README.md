@@ -77,9 +77,8 @@ Todos com suporte a:
 GET, GET /{id}, POST, PUT /{id}, DELETE /{id}.
 
 📁 Estrutura do Projeto
-pgsql
-Copy
-Edit
+```
+src/
 📦 BookLibraryApi
  ┣ 📜 Program.cs
  ┣ 📜 appsettings.json
@@ -89,6 +88,7 @@ Edit
  ┣ 📂 DTOs
  ┣ 📂 Migrations
 🧪 Testes
+```
 
 📌 Observações
 Projeto segue boas práticas como separação por DTOs, versionamento de rota e uso de EF Core com migrations.
