@@ -63,7 +63,7 @@ dotnet run
 Acesse a documentação Swagger:
 
 ```bash
-https://localhost:5001/swagger
+https://localhost:7071/swagger
 ```
 
 🔧 Endpoints disponíveis (via Swagger)
