@@ -1,4 +1,4 @@
--BACKEND-
+📚-BACKEND-📚
 
 📚 Book Library API
 API RESTful em .NET 8 para gerenciamento de gêneros, autores e livros, utilizando MySQL como banco de dados.
@@ -97,7 +97,7 @@ Projeto segue boas práticas como separação por DTOs, versionamento de rota e 
 A API está preparada para expansão futura (como autenticação, paginação, etc).
 
 
--FRONTEND-
+📚-FRONTEND-📚
 
 
 Frontend React para o sistema de gerenciamento de biblioteca, permitindo CRUD completo de Autores, Gêneros e Livros.
